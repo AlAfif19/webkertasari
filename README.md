@@ -13,6 +13,13 @@ npm run dev
 Salin `.env.example` menjadi `.env.local` dan isi `NEXT_PUBLIC_SITE_URL` dengan
 domain produksi yang sudah terverifikasi sebelum membuat build publik.
 
+Di Vercel, isi Environment Variable sebagai dua kolom terpisah:
+
+- Key: `NEXT_PUBLIC_SITE_URL`
+- Value: `https://webkertasari.vercel.app`
+
+Jangan menyertakan `NEXT_PUBLIC_SITE_URL=` di kolom Value.
+
 ## Verification
 
 ```bash

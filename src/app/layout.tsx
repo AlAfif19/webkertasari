@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  ),
+  metadataBase: getSiteUrl(process.env.NEXT_PUBLIC_SITE_URL),
   title:
     "WebKertasari | Jasa Pembuatan Website Kertasari untuk UMKM dan Personal",
   description:
