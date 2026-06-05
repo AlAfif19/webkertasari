@@ -22,7 +22,7 @@ npm run lint
 npm run build
 ```
 
-Static output ditulis ke folder `out/`.
+Deployment Vercel memakai integrasi Next.js native dan output internal `.next/`.
 
 ## Sebelum publikasi
 
