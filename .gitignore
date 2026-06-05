@@ -1,6 +1,7 @@
 .next/
 node_modules/
 out/
+lighthouse-report.json
 .superpowers/
 .worktrees/
 .env*

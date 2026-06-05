@@ -38,6 +38,7 @@ export function ContactSection() {
           <div className="flex items-start gap-4 rounded-2xl bg-white/10 p-4">
             <MapPin className="mt-0.5 size-5 shrink-0 text-cyan-300" />
             <div>
+              <h3 className="font-semibold">Area Layanan WebKertasari</h3>
               <p>{contact.location}</p>
               <p className="mt-2 text-sm text-slate-300">
                 {contact.serviceAreas.join(" · ")}
