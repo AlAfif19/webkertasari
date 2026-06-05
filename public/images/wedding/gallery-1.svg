@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Lengkung bunga pernikahan</title>
+  <desc id="desc">Ilustrasi pasangan fiktif di bawah lengkung bunga.</desc>
+  <rect width="1200" height="900" fill="#f4eadb"/>
+  <circle cx="600" cy="390" r="285" fill="#fffaf2" stroke="#a4834f" stroke-width="7"/>
+  <path d="M355 630c0-245 110-410 245-410s245 165 245 410" fill="none" stroke="#71836b" stroke-width="30"/>
+  <g fill="#d8ac9d">
+    <circle cx="390" cy="390" r="38"/><circle cx="430" cy="315" r="31"/>
+    <circle cx="810" cy="390" r="38"/><circle cx="770" cy="315" r="31"/>
+    <circle cx="590" cy="210" r="34"/><circle cx="655" cy="220" r="27"/>
+  </g>
+  <circle cx="535" cy="430" r="62" fill="#c79e87"/>
+  <circle cx="665" cy="430" r="62" fill="#b98d76"/>
+  <path d="M445 720c10-175 55-240 90-240s80 65 90 240Z" fill="#fff"/>
+  <path d="M575 720c10-175 55-240 90-240s80 65 90 240Z" fill="#443629"/>
+  <path d="M0 790c180-95 350-85 600 0 250-85 420-95 600 0v110H0Z" fill="#8aa083"/>
+</svg>

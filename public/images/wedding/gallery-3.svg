@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Meja resepsi dan pegunungan</title>
+  <desc id="desc">Ilustrasi meja acara dengan latar pegunungan Kertasari.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7e6dd"/>
+      <stop offset="1" stop-color="#f8f0e4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <circle cx="940" cy="180" r="90" fill="#e5c989"/>
+  <path d="M0 520 240 280l180 170 210-260 240 285 145-140 185 180v385H0Z" fill="#8aa083" opacity=".55"/>
+  <path d="M0 620 280 420l160 125 190-170 200 180 160-115 210 170v290H0Z" fill="#71836b"/>
+  <ellipse cx="600" cy="700" rx="390" ry="95" fill="#fffaf2"/>
+  <path d="M300 700h600l-65 200H365Z" fill="#f2dfd4"/>
+  <g fill="#d8ac9d">
+    <circle cx="470" cy="620" r="48"/><circle cx="535" cy="595" r="42"/>
+    <circle cx="665" cy="595" r="42"/><circle cx="730" cy="620" r="48"/>
+  </g>
+  <g fill="#fff" stroke="#a4834f" stroke-width="8">
+    <path d="M420 680h90l-15 90h-60Z"/><path d="M690 680h90l-15 90h-60Z"/>
+  </g>
+  <rect x="560" y="610" width="80" height="140" rx="12" fill="#fffaf2" stroke="#a4834f" stroke-width="8"/>
+</svg>
