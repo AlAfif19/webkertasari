@@ -13,7 +13,7 @@ import { WebsiteTypesSection } from "@/components/sections/website-types-section
 
 export default function HomePage() {
   return (
-    <>
+    <ChatbotProvider>
       <Navbar />
       <main>
         <HeroSection />
@@ -28,6 +28,9 @@ export default function HomePage() {
         <ContactSection />
       </main>
       <Footer />
-    </>
+      <FloatingActions />
+    </ChatbotProvider>
   );
 }
+import { ChatbotProvider } from "@/components/chatbot/chatbot-provider";
+import { FloatingActions } from "@/components/floating-actions";
