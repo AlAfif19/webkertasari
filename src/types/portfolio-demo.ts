@@ -21,6 +21,24 @@ export type PortfolioDemoShowcase = {
   description: string;
 };
 
+export type PortfolioDemoStory = {
+  eyebrow: string;
+  title: string;
+  paragraphs: string[];
+  highlights: string[];
+};
+
+export type PortfolioDemoProcess = {
+  step: string;
+  title: string;
+  description: string;
+};
+
+export type PortfolioDemoFaq = {
+  question: string;
+  answer: string;
+};
+
 export type PortfolioDemo = {
   slug: string;
   kind: PortfolioDemoKind;
@@ -31,11 +49,18 @@ export type PortfolioDemo = {
   primaryAction: string;
   secondaryAction: string;
   image: string;
+  portrait?: {
+    src: string;
+    alt: string;
+  };
   disclaimer: string;
   stats: PortfolioDemoStat[];
   features: PortfolioDemoFeature[];
   showcaseTitle: string;
   showcase: PortfolioDemoShowcase[];
+  story: PortfolioDemoStory;
+  process: PortfolioDemoProcess[];
+  faq: PortfolioDemoFaq[];
   closingTitle: string;
   closingDescription: string;
 };
