@@ -21,6 +21,7 @@ export type PortfolioItem = {
   description: string;
   image: string;
   label: "Demo";
+  href?: string;
 };
 
 export type ArticleSection = {

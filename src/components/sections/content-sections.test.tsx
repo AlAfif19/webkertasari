@@ -4,9 +4,13 @@ import { ArticlesSection } from "./articles-section";
 import { PortfolioSection } from "./portfolio-section";
 import { ReviewsSection } from "./reviews-section";
 
-it("labels every portfolio item as Demo", () => {
+it("labels six portfolio items as Demo and links the wedding example", () => {
   render(<PortfolioSection />);
-  expect(screen.getAllByText("Demo")).toHaveLength(5);
+
+  expect(screen.getAllByText("Demo")).toHaveLength(6);
+  expect(
+    screen.getByRole("link", { name: /lihat demo undangan pernikahan/i }),
+  ).toHaveAttribute("href", "/demo/undangan-pernikahan");
 });
 
 it("labels every review as Simulasi", () => {
