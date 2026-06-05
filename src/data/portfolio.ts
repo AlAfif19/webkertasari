@@ -8,6 +8,7 @@ export const portfolio: PortfolioItem[] = [
       "Website promosi usaha dengan tombol WhatsApp dan katalog layanan.",
     image: "/images/portfolio/umkm.svg",
     label: "Demo",
+    href: "/demo/website-umkm",
   },
   {
     title: "Website Portofolio",
@@ -15,6 +16,7 @@ export const portfolio: PortfolioItem[] = [
     description: "Website untuk menampilkan skill, pengalaman, dan karya.",
     image: "/images/portfolio/portfolio.svg",
     label: "Demo",
+    href: "/demo/website-portofolio",
   },
   {
     title: "Website Organisasi",
@@ -23,6 +25,7 @@ export const portfolio: PortfolioItem[] = [
       "Website kegiatan, profil pengurus, dan kontak organisasi.",
     image: "/images/portfolio/organization.svg",
     label: "Demo",
+    href: "/demo/website-organisasi",
   },
   {
     title: "Website POS Pelayanan",
@@ -31,6 +34,7 @@ export const portfolio: PortfolioItem[] = [
       "Website informasi layanan, jadwal kegiatan, dan kontak petugas.",
     image: "/images/portfolio/service.svg",
     label: "Demo",
+    href: "/demo/website-pos-pelayanan",
   },
   {
     title: "Dashboard Analitik",
@@ -39,6 +43,7 @@ export const portfolio: PortfolioItem[] = [
       "Website untuk melihat grafik, laporan, dan hasil analisis bisnis.",
     image: "/images/portfolio/analytics.svg",
     label: "Demo",
+    href: "/demo/dashboard-analitik",
   },
   {
     title: "Undangan Pernikahan",
