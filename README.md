@@ -36,6 +36,8 @@ Deployment Vercel memakai integrasi Next.js native dan output internal `.next/`.
 - Artikel lengkap tersedia di `/artikel/[slug]` dan dibangun statis dari
   `src/data/articles.ts`.
 - Demo undangan tersedia di `/demo/undangan-pernikahan`.
+- Lima demo portofolio lain tersedia di `/demo/[slug]` dan dibangun statis dari
+  `src/data/portfolio-demos.ts`.
 - RSVP dan buku tamu demo hanya disimpan di `localStorage` browser; tidak ada
   data yang dikirim ke server.
 
