@@ -35,6 +35,14 @@ describe("chatbot storage", () => {
     expect(loadChatbotSession()).toBeNull();
   });
 
+  it("ignores JSON with an incomplete session shape", () => {
+    localStorage.setItem(
+      "webkertasari-chatbot-v1",
+      JSON.stringify({ version: 1, step: "summary", messages: [] }),
+    );
+    expect(loadChatbotSession()).toBeNull();
+  });
+
   it("returns false when storage throws", () => {
     vi.spyOn(Storage.prototype, "setItem").mockImplementationOnce(() => {
       throw new Error("blocked");
