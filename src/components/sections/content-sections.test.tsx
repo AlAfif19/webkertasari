@@ -15,6 +15,12 @@ it("labels and links all six portfolio demos", () => {
     .toHaveAttribute("href", "/demo/website-umkm");
   expect(screen.getByRole("link", { name: /lihat demo dashboard analitik/i }))
     .toHaveAttribute("href", "/demo/dashboard-analitik");
+  expect(
+    screen.getByAltText("Mockup demo Dashboard Analitik"),
+  ).toHaveAttribute(
+    "src",
+    expect.stringContaining("analytics-dashboard.svg"),
+  );
 });
 
 it("labels every review as Simulasi", () => {

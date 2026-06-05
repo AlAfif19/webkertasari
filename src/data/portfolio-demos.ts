@@ -322,7 +322,7 @@ export const portfolioDemos: PortfolioDemo[] = [
       "Contoh dashboard analitik untuk merangkum kinerja, tren permintaan, distribusi layanan, dan aktivitas bisnis.",
     primaryAction: "Lihat ringkasan",
     secondaryAction: "Baca insight",
-    image: "/images/portfolio/analytics.svg",
+    image: "/images/portfolio/analytics-dashboard.svg",
     disclaimer:
       "Semua nilai, grafik, persentase, aktivitas, dan insight pada dashboard ini adalah data simulasi.",
     stats: [

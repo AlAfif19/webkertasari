@@ -39,4 +39,10 @@ describe("portfolio demo data", () => {
       alt: "Potret AI Nadia Pratama, profesional fiktif untuk demo portofolio",
     });
   });
+
+  it("uses the enriched dashboard thumbnail", () => {
+    expect(getPortfolioDemoBySlug("dashboard-analitik")?.image).toBe(
+      "/images/portfolio/analytics-dashboard.svg",
+    );
+  });
 });
