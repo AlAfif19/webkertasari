@@ -13,11 +13,15 @@ export function WeddingRsvp() {
   const [status, setStatus] = useState("");
 
   useEffect(() => {
-    const saved = loadRsvp();
-    if (!saved) return;
-    setName(saved.name);
-    setAttendance(saved.attendance);
-    setGuestCount(saved.guestCount);
+    const timeout = window.setTimeout(() => {
+      const saved = loadRsvp();
+      if (!saved) return;
+      setName(saved.name);
+      setAttendance(saved.attendance);
+      setGuestCount(saved.guestCount);
+    }, 0);
+
+    return () => window.clearTimeout(timeout);
   }, []);
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {

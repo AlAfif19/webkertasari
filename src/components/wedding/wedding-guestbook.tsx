@@ -15,7 +15,11 @@ export function WeddingGuestbook() {
   const [status, setStatus] = useState("");
 
   useEffect(() => {
-    setEntries(loadGuestbookEntries());
+    const timeout = window.setTimeout(() => {
+      setEntries(loadGuestbookEntries());
+    }, 0);
+
+    return () => window.clearTimeout(timeout);
   }, []);
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
