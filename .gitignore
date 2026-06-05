@@ -1,6 +1,8 @@
 .next/
 node_modules/
 out/
+lighthouse-report.json
+*.tsbuildinfo
 .superpowers/
 .worktrees/
 .env*
