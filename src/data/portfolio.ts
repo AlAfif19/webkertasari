@@ -41,7 +41,7 @@ export const portfolio: PortfolioItem[] = [
     type: "Data bisnis",
     description:
       "Website untuk melihat grafik, laporan, dan hasil analisis bisnis.",
-    image: "/images/portfolio/analytics.svg",
+    image: "/images/portfolio/analytics-dashboard.svg",
     label: "Demo",
     href: "/demo/dashboard-analitik",
   },

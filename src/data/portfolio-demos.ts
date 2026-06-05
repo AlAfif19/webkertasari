@@ -54,6 +54,25 @@ export const portfolioDemos: PortfolioDemo[] = [
         description: "Camilan renyah dengan pilihan rasa ringan dan pedas.",
       },
     ],
+    story: {
+      eyebrow: "Cerita Usaha",
+      title: "Dari bahan lokal menuju etalase digital.",
+      paragraphs: [
+        "Rasa Bumi menggambarkan UMKM fiktif yang ingin menyatukan cerita produk, katalog, dan cara pemesanan pada satu alamat yang mudah dibagikan.",
+        "Bagian cerita membantu pelanggan memahami bahan, proses, dan nilai usaha sebelum memilih produk atau menghubungi penjual.",
+      ],
+      highlights: ["Bahan lokal", "Kemasan praktis", "Pemesanan terarah"],
+    },
+    process: [
+      { step: "01", title: "Pilih produk", description: "Baca varian, ukuran, dan keterangan produk demo." },
+      { step: "02", title: "Kirim pesanan", description: "Gunakan pesan WhatsApp yang sudah membawa konteks pilihan." },
+      { step: "03", title: "Konfirmasi", description: "Penjual memeriksa stok, biaya, dan waktu pengiriman." },
+    ],
+    faq: [
+      { question: "Apakah harga pada demo nyata?", answer: "Tidak. Seluruh harga dan produk hanya contoh struktur katalog." },
+      { question: "Bisakah katalog diperbanyak?", answer: "Bisa. Kategori dan produk dapat disesuaikan dengan usaha sebenarnya." },
+      { question: "Apakah perlu pembayaran online?", answer: "Tidak wajib. Tahap awal dapat tetap memakai konfirmasi WhatsApp." },
+    ],
     closingTitle: "Siap menerima pesanan lebih terarah?",
     closingDescription:
       "Website UMKM dapat disesuaikan dengan identitas, produk, area layanan, dan alur pemesanan usaha Anda.",
@@ -69,6 +88,10 @@ export const portfolioDemos: PortfolioDemo[] = [
     primaryAction: "Lihat karya",
     secondaryAction: "Tentang saya",
     image: "/images/portfolio/portfolio.svg",
+    portrait: {
+      src: "/images/demos/nadia-pratama.png",
+      alt: "Potret AI Nadia Pratama, profesional fiktif untuk demo portofolio",
+    },
     disclaimer:
       "Nama, pengalaman, karya, dan pencapaian pada portofolio ini sepenuhnya fiktif untuk kebutuhan demo.",
     stats: [
@@ -113,6 +136,25 @@ export const portfolioDemos: PortfolioDemo[] = [
         description:
           "Sistem komponen untuk pengalaman pendaftaran layanan kesehatan.",
       },
+    ],
+    story: {
+      eyebrow: "Tentang Profil",
+      title: "Karya yang disertai konteks dan cara berpikir.",
+      paragraphs: [
+        "Nadia Pratama adalah persona fiktif yang digunakan untuk menunjukkan bagaimana seorang profesional dapat memperkenalkan fokus kerja dan pengalaman secara personal.",
+        "Portofolio yang baik tidak hanya memajang hasil akhir, tetapi juga menjelaskan masalah, peran, proses, dan keputusan penting pada setiap karya.",
+      ],
+      highlights: ["Strategi produk", "Desain antarmuka", "Kolaborasi tim"],
+    },
+    process: [
+      { step: "01", title: "Pahami masalah", description: "Mengumpulkan kebutuhan, batasan, dan konteks pengguna." },
+      { step: "02", title: "Uji gagasan", description: "Membuat alur dan prototipe untuk memperoleh masukan." },
+      { step: "03", title: "Rancang sistem", description: "Menyempurnakan UI dan dokumentasi agar dapat dikembangkan." },
+    ],
+    faq: [
+      { question: "Apakah Nadia orang nyata?", answer: "Tidak. Nama, foto AI, pengalaman, dan karya semuanya fiktif." },
+      { question: "Bisa dipakai untuk profesi lain?", answer: "Bisa untuk developer, fotografer, penulis, konsultan, dan lainnya." },
+      { question: "Apakah CV dapat diunduh?", answer: "Fitur unduh dapat ditambahkan setelah dokumen nyata tersedia." },
     ],
     closingTitle: "Portofolio yang menjelaskan cara Anda bekerja.",
     closingDescription:
@@ -171,6 +213,25 @@ export const portfolioDemos: PortfolioDemo[] = [
         description: "Perkenalan program dan pembagian peran relawan baru.",
       },
     ],
+    story: {
+      eyebrow: "Tentang Komunitas",
+      title: "Menyatukan program, kabar, dan partisipasi.",
+      paragraphs: [
+        "Kertasari Muda adalah komunitas fiktif yang menggambarkan kebutuhan organisasi lokal untuk menjelaskan tujuan dan kegiatan secara terbuka.",
+        "Website menjadi arsip ringan untuk agenda, dokumentasi, profil pengurus, serta informasi bagi warga yang ingin berpartisipasi.",
+      ],
+      highlights: ["Terbuka", "Kolaboratif", "Berbasis kegiatan"],
+    },
+    process: [
+      { step: "01", title: "Kenali program", description: "Pelajari fokus kegiatan dan sasaran penerima manfaat." },
+      { step: "02", title: "Pilih peran", description: "Tentukan bentuk dukungan, relawan, atau kemitraan." },
+      { step: "03", title: "Hubungi pengurus", description: "Gunakan kontak resmi yang dicantumkan organisasi." },
+    ],
+    faq: [
+      { question: "Apakah komunitas ini nyata?", answer: "Tidak. Nama, program, anggota, dan agenda adalah simulasi." },
+      { question: "Bisakah ada halaman berita?", answer: "Bisa, termasuk kategori berita, dokumentasi, dan arsip kegiatan." },
+      { question: "Apakah pengurus dapat diperbarui?", answer: "Data pengurus dapat dikelola melalui pembaruan konten berkala." },
+    ],
     closingTitle: "Satu pusat informasi untuk gerakan bersama.",
     closingDescription:
       "Website organisasi dapat memudahkan publik memahami kegiatan dan menemukan jalur partisipasi yang tepat.",
@@ -228,6 +289,25 @@ export const portfolioDemos: PortfolioDemo[] = [
         description: "Formulir ringkas untuk meneruskan informasi kepada petugas.",
       },
     ],
+    story: {
+      eyebrow: "Tentang Pelayanan",
+      title: "Mengurangi kebingungan sebelum warga datang.",
+      paragraphs: [
+        "Pos Layanan Warga adalah contoh fiktif untuk menunjukkan bagaimana persyaratan, jadwal, dan pengumuman dapat disusun dalam bahasa yang mudah dipahami.",
+        "Informasi yang konsisten membantu warga menyiapkan dokumen serta memilih jalur kontak yang tepat sebelum mengunjungi lokasi layanan.",
+      ],
+      highlights: ["Persyaratan jelas", "Jadwal terbuka", "Kontak terarah"],
+    },
+    process: [
+      { step: "01", title: "Pilih layanan", description: "Cari jenis layanan dan baca persyaratan yang dibutuhkan." },
+      { step: "02", title: "Siapkan dokumen", description: "Gunakan daftar periksa sebelum mengajukan layanan." },
+      { step: "03", title: "Datang atau hubungi", description: "Ikuti jadwal dan saluran petugas yang sesuai." },
+    ],
+    faq: [
+      { question: "Apakah ini situs instansi resmi?", answer: "Bukan. Seluruh identitas dan informasi pelayanan adalah demo." },
+      { question: "Bisakah ditambah formulir?", answer: "Bisa, dengan penentuan keamanan dan alur pengelolaan data." },
+      { question: "Apakah jadwal dapat berubah?", answer: "Konten jadwal dapat diperbarui sesuai keputusan pengelola." },
+    ],
     closingTitle: "Pelayanan dimulai dari informasi yang jelas.",
     closingDescription:
       "Konten dapat diatur sesuai layanan desa, komunitas, posyandu, koperasi, atau organisasi pelayanan lainnya.",
@@ -242,7 +322,7 @@ export const portfolioDemos: PortfolioDemo[] = [
       "Contoh dashboard analitik untuk merangkum kinerja, tren permintaan, distribusi layanan, dan aktivitas bisnis.",
     primaryAction: "Lihat ringkasan",
     secondaryAction: "Baca insight",
-    image: "/images/portfolio/analytics.svg",
+    image: "/images/portfolio/analytics-dashboard.svg",
     disclaimer:
       "Semua nilai, grafik, persentase, aktivitas, dan insight pada dashboard ini adalah data simulasi.",
     stats: [
@@ -285,6 +365,25 @@ export const portfolioDemos: PortfolioDemo[] = [
         meta: "41% simulasi",
         description: "Program tindak lanjut dapat difokuskan pada pelanggan baru.",
       },
+    ],
+    story: {
+      eyebrow: "Tentang Dashboard",
+      title: "Visual yang menjawab pertanyaan, bukan sekadar ramai.",
+      paragraphs: [
+        "Lentera Analytics menggambarkan dashboard fiktif yang merangkum data penjualan dan pelayanan menjadi indikator yang mudah dipindai.",
+        "Setiap diagram diberi konteks dan insight singkat agar pengguna memahami perubahan, distribusi, serta tindakan yang dapat dipertimbangkan.",
+      ],
+      highlights: ["KPI utama", "Tren waktu", "Distribusi kanal"],
+    },
+    process: [
+      { step: "01", title: "Hubungkan data", description: "Tentukan sumber dan struktur data yang dapat dipercaya." },
+      { step: "02", title: "Pilih indikator", description: "Gunakan metrik yang berkaitan langsung dengan keputusan." },
+      { step: "03", title: "Baca dan tindak", description: "Tinjau pola lalu catat tindakan serta hasilnya." },
+    ],
+    faq: [
+      { question: "Apakah data dashboard nyata?", answer: "Tidak. Seluruh angka, grafik, dan insight adalah simulasi." },
+      { question: "Data dapat berasal dari mana?", answer: "Bisa dari spreadsheet, database, sistem transaksi, atau API yang disetujui." },
+      { question: "Apakah dashboard memerlukan login?", answer: "Untuk data sensitif, autentikasi dan pengaturan hak akses direkomendasikan." },
     ],
     closingTitle: "Dashboard yang dimulai dari pertanyaan bisnis.",
     closingDescription:

@@ -10,6 +10,9 @@ describe("portfolio demo data", () => {
       expect(demo.stats.length).toBeGreaterThanOrEqual(3);
       expect(demo.features.length).toBeGreaterThanOrEqual(3);
       expect(demo.showcase.length).toBeGreaterThanOrEqual(3);
+      expect(demo.story.paragraphs.length).toBeGreaterThanOrEqual(2);
+      expect(demo.process).toHaveLength(3);
+      expect(demo.faq.length).toBeGreaterThanOrEqual(3);
       expect(demo.disclaimer).toMatch(/demo|simulasi|fiktif/i);
     }
   });
@@ -27,5 +30,19 @@ describe("portfolio demo data", () => {
   it("finds known slugs and rejects unknown slugs", () => {
     expect(getPortfolioDemoBySlug("website-umkm")?.brand).toBe("Rasa Bumi");
     expect(getPortfolioDemoBySlug("tidak-ada")).toBeUndefined();
+  });
+
+  it("assigns a fictional portrait to the personal demo", () => {
+    const personal = getPortfolioDemoBySlug("website-portofolio");
+    expect(personal?.portrait).toEqual({
+      src: "/images/demos/nadia-pratama.png",
+      alt: "Potret AI Nadia Pratama, profesional fiktif untuk demo portofolio",
+    });
+  });
+
+  it("uses the enriched dashboard thumbnail", () => {
+    expect(getPortfolioDemoBySlug("dashboard-analitik")?.image).toBe(
+      "/images/portfolio/analytics-dashboard.svg",
+    );
   });
 });

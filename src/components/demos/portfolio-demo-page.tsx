@@ -120,16 +120,22 @@ function HeroMockup({ demo }: Props) {
     );
   }
 
+  const heroImage = demo.portrait?.src ?? demo.image;
+  const heroAlt =
+    demo.portrait?.alt ?? `Mockup ${demo.brand} untuk demo`;
+
   return (
     <div className="relative">
       <div className="overflow-hidden rounded-3xl border border-white/15 bg-white/10 p-3 shadow-2xl">
         <Image
-          src={demo.image}
-          alt={`Mockup ${demo.brand} untuk demo`}
+          src={heroImage}
+          alt={heroAlt}
           width={720}
           height={480}
           priority
-          className="aspect-[3/2] w-full rounded-2xl object-cover"
+          className={`aspect-[3/2] w-full rounded-2xl object-cover ${
+            demo.portrait ? "object-[center_35%]" : ""
+          }`}
         />
       </div>
       <div className="absolute -bottom-5 -left-4 max-w-56 rounded-2xl bg-white p-4 text-slate-950 shadow-xl">
@@ -150,6 +156,16 @@ function AnalyticsOverview() {
     ["Apr", 70],
     ["Mei", 64],
     ["Jun", 86],
+  ] as const;
+  const channels = [
+    ["WhatsApp", "54%", "w-[54%]"],
+    ["Website", "31%", "w-[31%]"],
+    ["Datang langsung", "15%", "w-[15%]"],
+  ] as const;
+  const activities = [
+    ["10.42", "Pesanan Kopi Lereng dikonfirmasi", "Rp245.000"],
+    ["09.18", "Stok Teh Rempah diperbarui", "48 unit"],
+    ["Kemarin", "Laporan mingguan selesai", "+12%"],
   ] as const;
 
   return (
@@ -211,6 +227,258 @@ function AnalyticsOverview() {
               sehingga stok akhir pekan dapat diprioritaskan.
             </p>
           </article>
+        </div>
+
+        <div className="mt-6 grid gap-6 lg:grid-cols-3">
+          <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8 lg:col-span-2">
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <p className="text-sm font-semibold text-cyan-700">
+                  Nilai transaksi simulasi
+                </p>
+                <h2 className="mt-2 text-2xl font-black">
+                  Tren Pendapatan
+                </h2>
+              </div>
+              <p className="text-sm font-semibold text-emerald-700">
+                +12% dari periode lalu
+              </p>
+            </div>
+            <div className="mt-8 overflow-hidden rounded-2xl bg-slate-50 p-4">
+              <svg
+                viewBox="0 0 640 220"
+                className="h-auto w-full"
+                role="img"
+                aria-label="Grafik garis tren pendapatan Januari sampai Juni"
+              >
+                {[40, 90, 140, 190].map((y) => (
+                  <line
+                    key={y}
+                    x1="20"
+                    y1={y}
+                    x2="620"
+                    y2={y}
+                    stroke="#cbd5e1"
+                    strokeDasharray="5 7"
+                  />
+                ))}
+                <path
+                  d="M30 174 C90 166 105 148 145 152 S220 116 260 126 S330 83 380 96 S455 58 500 72 S570 38 610 42"
+                  fill="none"
+                  stroke="#0891b2"
+                  strokeLinecap="round"
+                  strokeWidth="8"
+                />
+                <path
+                  d="M30 174 C90 166 105 148 145 152 S220 116 260 126 S330 83 380 96 S455 58 500 72 S570 38 610 42 L610 200 L30 200 Z"
+                  fill="url(#income-gradient)"
+                  opacity=".35"
+                />
+                <defs>
+                  <linearGradient
+                    id="income-gradient"
+                    x1="0"
+                    y1="0"
+                    x2="0"
+                    y2="1"
+                  >
+                    <stop offset="0%" stopColor="#22d3ee" />
+                    <stop offset="100%" stopColor="#ecfeff" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div className="grid grid-cols-6 text-center text-xs text-slate-500">
+                {["Jan", "Feb", "Mar", "Apr", "Mei", "Jun"].map((month) => (
+                  <span key={month}>{month}</span>
+                ))}
+              </div>
+            </div>
+          </article>
+
+          <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <p className="text-sm font-semibold text-cyan-700">
+              Komposisi simulasi
+            </p>
+            <h2 className="mt-2 text-2xl font-black">Kategori Pesanan</h2>
+            <div className="mt-8 flex justify-center">
+              <div
+                className="grid size-44 place-items-center rounded-full"
+                style={{
+                  background:
+                    "conic-gradient(#0891b2 0 46%, #34d399 46% 80%, #cbd5e1 80% 100%)",
+                }}
+                role="img"
+                aria-label="Diagram donat kategori pesanan: minuman 46 persen, makanan 34 persen, lainnya 20 persen"
+              >
+                <div className="grid size-28 place-items-center rounded-full bg-white text-center">
+                  <span>
+                    <strong className="block text-2xl">126</strong>
+                    <span className="text-xs text-slate-500">pesanan</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="mt-7 grid gap-3 text-sm">
+              {[
+                ["Minuman", "46%", "bg-cyan-600"],
+                ["Makanan", "34%", "bg-emerald-400"],
+                ["Lainnya", "20%", "bg-slate-300"],
+              ].map(([label, value, color]) => (
+                <div key={label} className="flex items-center gap-3">
+                  <span className={`size-3 rounded-full ${color}`} />
+                  <span className="flex-1">{label}</span>
+                  <strong>{value}</strong>
+                </div>
+              ))}
+            </div>
+          </article>
+        </div>
+
+        <div className="mt-6 grid gap-6 lg:grid-cols-2">
+          <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <p className="text-sm font-semibold text-cyan-700">
+              Sumber transaksi simulasi
+            </p>
+            <h2 className="mt-2 text-2xl font-black">Pesanan per Kanal</h2>
+            <div className="mt-8 space-y-6">
+              {channels.map(([label, value, width]) => (
+                <div key={label}>
+                  <div className="flex justify-between text-sm">
+                    <span>{label}</span>
+                    <strong>{value}</strong>
+                  </div>
+                  <div className="mt-2 h-3 rounded-full bg-slate-100">
+                    <div
+                      className={`h-3 rounded-full bg-gradient-to-r from-cyan-700 to-emerald-400 ${width}`}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </article>
+
+          <article className="rounded-3xl bg-slate-950 p-6 text-white shadow-sm sm:p-8">
+            <p className="text-sm font-semibold text-cyan-300">
+              Pembaruan operasional simulasi
+            </p>
+            <h2 className="mt-2 text-2xl font-black">Aktivitas Terbaru</h2>
+            <div className="mt-7 divide-y divide-white/10">
+              {activities.map(([time, activity, value]) => (
+                <div
+                  key={activity}
+                  className="grid grid-cols-[auto_1fr_auto] items-center gap-4 py-4"
+                >
+                  <span className="text-xs text-slate-400">{time}</span>
+                  <span className="text-sm leading-6">{activity}</span>
+                  <strong className="text-sm text-cyan-300">{value}</strong>
+                </div>
+              ))}
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function StorySection({ demo }: Props) {
+  const currentTheme = theme[demo.kind];
+
+  return (
+    <section className="px-4 py-20">
+      <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.1fr_.9fr]">
+        <div>
+          <Badge className={currentTheme.badge}>{demo.story.eyebrow}</Badge>
+          <h2 className="mt-5 max-w-3xl text-3xl font-black sm:text-4xl">
+            {demo.story.title}
+          </h2>
+          <div className="mt-6 space-y-4 text-lg leading-8 text-slate-600">
+            {demo.story.paragraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+        </div>
+        <aside className={`${currentTheme.dark} rounded-3xl p-7 sm:p-9`}>
+          <p className="text-sm font-bold uppercase tracking-[0.2em] opacity-60">
+            Fokus Utama
+          </p>
+          <div className="mt-6 space-y-4">
+            {demo.story.highlights.map((highlight) => (
+              <div
+                key={highlight}
+                className="flex items-center gap-3 rounded-2xl bg-white/10 p-4"
+              >
+                <CheckCircle2 className="size-5 shrink-0" aria-hidden="true" />
+                <span className="font-semibold">{highlight}</span>
+              </div>
+            ))}
+          </div>
+        </aside>
+      </div>
+    </section>
+  );
+}
+
+function ProcessSection({ demo }: Props) {
+  const currentTheme = theme[demo.kind];
+
+  return (
+    <section className="px-4 py-20">
+      <div className="mx-auto max-w-6xl">
+        <div className="max-w-3xl">
+          <Badge className={currentTheme.badge}>Alur Demo</Badge>
+          <h2 className="mt-5 text-3xl font-black sm:text-4xl">
+            Cara kerjanya, langkah demi langkah.
+          </h2>
+        </div>
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {demo.process.map((item) => (
+            <article
+              key={item.step}
+              className="rounded-3xl border border-black/10 bg-white p-7 shadow-sm"
+            >
+              <span className="text-4xl font-black opacity-20">{item.step}</span>
+              <h3 className="mt-5 text-xl font-bold">{item.title}</h3>
+              <p className="mt-3 leading-7 text-slate-600">
+                {item.description}
+              </p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FaqSection({ demo }: Props) {
+  const currentTheme = theme[demo.kind];
+
+  return (
+    <section className={`${currentTheme.soft} px-4 py-20`}>
+      <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[.7fr_1.3fr]">
+        <div>
+          <Badge className={currentTheme.badge}>FAQ Demo</Badge>
+          <h2 className="mt-5 text-3xl font-black sm:text-4xl">
+            Pertanyaan Umum
+          </h2>
+          <p className="mt-5 leading-7 text-slate-600">
+            Jawaban berikut memperjelas batas antara contoh tampilan dan
+            kebutuhan website yang sebenarnya.
+          </p>
+        </div>
+        <div className="space-y-4">
+          {demo.faq.map((item, index) => (
+            <details
+              key={item.question}
+              className="group rounded-2xl border border-black/10 bg-white p-5 shadow-sm"
+              open={index === 0}
+            >
+              <summary className="cursor-pointer list-none pr-8 font-bold">
+                {item.question}
+              </summary>
+              <p className="mt-4 leading-7 text-slate-600">{item.answer}</p>
+            </details>
+          ))}
         </div>
       </div>
     </section>
@@ -277,6 +545,8 @@ export function PortfolioDemoPage({ demo }: Props) {
           ))}
         </div>
       </section>
+
+      <StorySection demo={demo} />
 
       <section id="fitur" className="px-4 py-20">
         <div className="mx-auto max-w-6xl">
@@ -349,6 +619,9 @@ export function PortfolioDemoPage({ demo }: Props) {
           </div>
         </div>
       </section>
+
+      <ProcessSection demo={demo} />
+      <FaqSection demo={demo} />
 
       <section className={`${currentTheme.dark} px-4 py-20 text-center`}>
         <div className="mx-auto max-w-3xl">
