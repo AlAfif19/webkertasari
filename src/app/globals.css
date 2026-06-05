@@ -38,6 +38,30 @@ button {
   outline-offset: 3px;
 }
 
+.site-container {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
+.section-space {
+  padding-block: 5rem;
+  scroll-margin-top: 5rem;
+}
+
+.section-muted {
+  background: var(--surface);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.analytics-gradient {
+  background:
+    radial-gradient(circle at 85% 20%, rgb(103 232 249 / 18%), transparent 30%),
+    linear-gradient(135deg, var(--navy-950), #123e63);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
