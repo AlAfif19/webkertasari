@@ -31,6 +31,14 @@ npm run build
 
 Deployment Vercel memakai integrasi Next.js native dan output internal `.next/`.
 
+## Konten lokal
+
+- Artikel lengkap tersedia di `/artikel/[slug]` dan dibangun statis dari
+  `src/data/articles.ts`.
+- Demo undangan tersedia di `/demo/undangan-pernikahan`.
+- RSVP dan buku tamu demo hanya disimpan di `localStorage` browser; tidak ada
+  data yang dikirim ke server.
+
 ## Sebelum publikasi
 
 - Isi `NEXT_PUBLIC_SITE_URL` dengan domain produksi terverifikasi.

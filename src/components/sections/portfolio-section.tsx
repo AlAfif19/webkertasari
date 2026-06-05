@@ -1,5 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { portfolio } from "@/data/portfolio";
@@ -30,6 +33,17 @@ export function PortfolioSection() {
                 <p className="mt-2 leading-7 text-slate-600">
                   {item.description}
                 </p>
+                {item.href ? (
+                  <Button asChild variant="outline" className="mt-5 w-full">
+                    <Link
+                      href={item.href}
+                      aria-label={`Lihat demo ${item.title}`}
+                    >
+                      Lihat demo
+                      <ArrowRight className="size-4" aria-hidden="true" />
+                    </Link>
+                  </Button>
+                ) : null}
               </CardContent>
             </Card>
           ))}

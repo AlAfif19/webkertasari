@@ -21,13 +21,28 @@ export type PortfolioItem = {
   description: string;
   image: string;
   label: "Demo";
+  href?: string;
+};
+
+export type ArticleSection = {
+  heading: string;
+  paragraphs: string[];
+  points?: string[];
 };
 
 export type Article = {
+  slug: string;
   title: string;
   summary: string;
   date: string;
   category: string;
+  location?: "Kertasari";
+  image: string;
+  imageAlt: string;
+  introduction: string;
+  highlight: string;
+  sections: ArticleSection[];
+  conclusion: string;
 };
 
 export type Review = {

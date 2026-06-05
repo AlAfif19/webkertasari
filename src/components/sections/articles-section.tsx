@@ -1,4 +1,5 @@
-import { CalendarDays } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, CalendarDays } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { SectionHeading } from "@/components/shared/section-heading";
@@ -27,9 +28,14 @@ export function ArticlesSection() {
                     <CalendarDays className="size-4" />
                     {article.date}
                   </span>
-                  <span className="font-semibold text-emerald-700">
-                    Ringkasan Artikel
-                  </span>
+                  <Link
+                    href={`/artikel/${article.slug}`}
+                    className="inline-flex items-center gap-2 font-semibold text-emerald-700 hover:text-emerald-800"
+                    aria-label={`Baca artikel: ${article.title}`}
+                  >
+                    Baca artikel
+                    <ArrowRight className="size-4" aria-hidden="true" />
+                  </Link>
                 </div>
               </CardContent>
             </Card>

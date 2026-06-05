@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Cincin dan kartu undangan</title>
+  <desc id="desc">Ilustrasi benda pernikahan dengan bunga dan pita.</desc>
+  <rect width="1200" height="900" fill="#e7ded0"/>
+  <rect x="270" y="145" width="660" height="610" rx="25" transform="rotate(-5 600 450)" fill="#fffaf2" stroke="#a4834f" stroke-width="7"/>
+  <path d="M350 265h500M420 330h360" stroke="#c8ad7d" stroke-width="12" stroke-linecap="round"/>
+  <text x="600" y="470" text-anchor="middle" fill="#443629" font-family="Georgia,serif" font-size="92">A &amp; F</text>
+  <circle cx="520" cy="630" r="95" fill="none" stroke="#b58b45" stroke-width="24"/>
+  <circle cx="675" cy="630" r="95" fill="none" stroke="#d1ae6a" stroke-width="24"/>
+  <path d="M160 690c120-60 145-210 95-345M1040 240c-135 70-170 220-120 365" fill="none" stroke="#71836b" stroke-width="30" stroke-linecap="round"/>
+  <g fill="#d8ac9d">
+    <circle cx="190" cy="630" r="55"/><circle cx="250" cy="520" r="42"/>
+    <circle cx="1010" cy="300" r="55"/><circle cx="950" cy="410" r="42"/>
+  </g>
+</svg>

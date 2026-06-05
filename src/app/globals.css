@@ -62,6 +62,26 @@ button {
     linear-gradient(135deg, var(--navy-950), #123e63);
 }
 
+.wedding-page {
+  --wedding-ink: #443629;
+  --wedding-gold: #a4834f;
+  --wedding-cream: #fbf7ef;
+  color: var(--wedding-ink);
+  background:
+    radial-gradient(circle at top, rgb(164 131 79 / 12%), transparent 28rem),
+    var(--wedding-cream);
+}
+
+.wedding-serif {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.wedding-panel {
+  border: 1px solid rgb(164 131 79 / 35%);
+  background: rgb(255 253 248 / 92%);
+  box-shadow: 0 20px 60px rgb(68 54 41 / 8%);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
