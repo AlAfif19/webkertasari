@@ -21,6 +21,20 @@ it("labels and links all six portfolio demos", () => {
     "src",
     expect.stringContaining("analytics-dashboard.svg"),
   );
+  expect(screen.getByAltText("Mockup demo Website UMKM")).toHaveAttribute(
+    "src",
+    expect.stringContaining("umkm-catalog.svg"),
+  );
+  expect(
+    screen.getByAltText("Mockup demo Website Organisasi"),
+  ).toHaveAttribute(
+    "src",
+    expect.stringContaining("organization-gallery.svg"),
+  );
+  expect(screen.getByAltText("Mockup demo Website POS Kasir")).toHaveAttribute(
+    "src",
+    expect.stringContaining("pos-dashboard.svg"),
+  );
 });
 
 it("labels every review as Simulasi", () => {

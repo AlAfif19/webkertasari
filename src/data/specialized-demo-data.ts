@@ -13,7 +13,7 @@ export const umkmProducts: DemoProduct[] = [
     size: "200 g",
     price: "Rp48.000",
     stock: 24,
-    image: "/images/demos/umkm/kopi-arabika-kertasari.png",
+    image: "/images/demos/umkm/kopi-arabika-kertasari.webp",
     imageAlt:
       "Kemasan kopi Arabika Kertasari fiktif untuk katalog demo Rasa Bumi",
     badge: "Terlaris",
@@ -26,7 +26,7 @@ export const umkmProducts: DemoProduct[] = [
     size: "250 ml",
     price: "Rp18.000",
     stock: 18,
-    image: "/images/demos/umkm/kopi-susu-gula-aren.png",
+    image: "/images/demos/umkm/kopi-susu-gula-aren.webp",
     imageAlt:
       "Botol kopi susu gula aren fiktif untuk katalog demo Rasa Bumi",
     badge: "Favorit",
@@ -39,7 +39,7 @@ export const umkmProducts: DemoProduct[] = [
     size: "10 sachet",
     price: "Rp32.000",
     stock: 31,
-    image: "/images/demos/umkm/teh-rempah-gunung.png",
+    image: "/images/demos/umkm/teh-rempah-gunung.webp",
     imageAlt:
       "Kotak teh rempah gunung fiktif untuk katalog demo Rasa Bumi",
     description:
@@ -51,7 +51,7 @@ export const umkmProducts: DemoProduct[] = [
     size: "150 g",
     price: "Rp22.000",
     stock: 42,
-    image: "/images/demos/umkm/keripik-kentang-balado.png",
+    image: "/images/demos/umkm/keripik-kentang-balado.webp",
     imageAlt:
       "Kemasan keripik kentang balado fiktif untuk katalog demo Rasa Bumi",
     description: "Keripik kentang renyah dengan bumbu balado pedas manis.",
@@ -62,7 +62,7 @@ export const umkmProducts: DemoProduct[] = [
     size: "250 ml",
     price: "Rp68.000",
     stock: 7,
-    image: "/images/demos/umkm/madu-hutan-kertasari.png",
+    image: "/images/demos/umkm/madu-hutan-kertasari.webp",
     imageAlt:
       "Botol madu hutan Kertasari fiktif untuk katalog demo Rasa Bumi",
     badge: "Stok terbatas",
@@ -75,7 +75,7 @@ export const umkmProducts: DemoProduct[] = [
     size: "1 paket",
     price: "Rp145.000",
     stock: 9,
-    image: "/images/demos/umkm/paket-hampers-lereng.png",
+    image: "/images/demos/umkm/paket-hampers-lereng.webp",
     imageAlt:
       "Paket hampers produk lokal fiktif untuk katalog demo Rasa Bumi",
     badge: "Paket hadiah",
@@ -91,7 +91,7 @@ export const organizationGallery: DemoGalleryItem[] = [
     location: "Balai Warga Kertasari",
     caption:
       "Peserta mempraktikkan foto produk dan penulisan katalog untuk usaha lokal.",
-    image: "/images/demos/organization/pelatihan-konten-digital.png",
+    image: "/images/demos/organization/pelatihan-konten-digital.webp",
     imageAlt:
       "Kegiatan fiktif pemuda Indonesia mengikuti pelatihan konten digital di Kertasari",
   },
@@ -101,7 +101,7 @@ export const organizationGallery: DemoGalleryItem[] = [
     location: "Kampung Cibereum",
     caption:
       "Relawan membersihkan area bersama dan memilah sampah rumah tangga.",
-    image: "/images/demos/organization/aksi-bersih-lingkungan.png",
+    image: "/images/demos/organization/aksi-bersih-lingkungan.webp",
     imageAlt:
       "Kegiatan fiktif relawan muda membersihkan lingkungan kampung di Kertasari",
   },
@@ -111,7 +111,7 @@ export const organizationGallery: DemoGalleryItem[] = [
     location: "Sekretariat Komunitas",
     caption:
       "Relawan baru mengenal program, pembagian peran, dan jadwal kegiatan.",
-    image: "/images/demos/organization/briefing-relawan.png",
+    image: "/images/demos/organization/briefing-relawan.webp",
     imageAlt:
       "Kegiatan fiktif briefing relawan muda Indonesia di ruang komunitas Kertasari",
   },
@@ -121,7 +121,7 @@ export const organizationGallery: DemoGalleryItem[] = [
     location: "Ruang Kreatif Tarumajaya",
     caption:
       "Pelaku usaha belajar pencahayaan sederhana untuk foto katalog ponsel.",
-    image: "/images/demos/organization/lokakarya-foto-produk.png",
+    image: "/images/demos/organization/lokakarya-foto-produk.webp",
     imageAlt:
       "Kegiatan fiktif lokakarya fotografi produk bagi pemuda dan pelaku UMKM Kertasari",
   },
@@ -131,7 +131,7 @@ export const organizationGallery: DemoGalleryItem[] = [
     location: "Lereng Desa Cibeureum",
     caption:
       "Anggota dan warga menanam bibit sebagai bagian dari edukasi lingkungan.",
-    image: "/images/demos/organization/penanaman-pohon.png",
+    image: "/images/demos/organization/penanaman-pohon.webp",
     imageAlt:
       "Kegiatan fiktif pemuda dan warga menanam bibit pohon di lereng Kertasari",
   },
@@ -141,7 +141,7 @@ export const organizationGallery: DemoGalleryItem[] = [
     location: "Aula Desa Santosa",
     caption:
       "Perwakilan warga menyusun prioritas kegiatan keterampilan berikutnya.",
-    image: "/images/demos/organization/diskusi-warga.png",
+    image: "/images/demos/organization/diskusi-warga.webp",
     imageAlt:
       "Kegiatan fiktif diskusi komunitas antara pemuda dan warga di Kertasari",
   },

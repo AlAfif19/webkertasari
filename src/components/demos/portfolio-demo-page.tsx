@@ -22,6 +22,10 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { AnalyticsOperations } from "@/components/demos/analytics-operations";
+import { OrganizationGallery } from "@/components/demos/organization-gallery";
+import { PosOverview } from "@/components/demos/pos-overview";
+import { UmkmCatalog } from "@/components/demos/umkm-catalog";
 import type {
   PortfolioDemo,
   PortfolioDemoKind,
@@ -579,6 +583,18 @@ export function PortfolioDemoPage({ demo }: Props) {
       </section>
 
       {demo.kind === "analytics" ? <AnalyticsOverview /> : null}
+      {demo.kind === "analytics" && demo.analytics ? (
+        <AnalyticsOperations data={demo.analytics} stats={demo.stats} />
+      ) : null}
+      {demo.kind === "umkm" && demo.products ? (
+        <UmkmCatalog products={demo.products} />
+      ) : null}
+      {demo.kind === "organization" && demo.gallery ? (
+        <OrganizationGallery items={demo.gallery} />
+      ) : null}
+      {demo.kind === "service" && demo.pos ? (
+        <PosOverview data={demo.pos} />
+      ) : null}
 
       <section id="showcase" className={`${currentTheme.soft} px-4 py-20`}>
         <div className="mx-auto max-w-6xl">

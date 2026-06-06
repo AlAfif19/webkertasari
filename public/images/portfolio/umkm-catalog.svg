@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480">
+  <rect width="720" height="480" fill="#f7efe0"/>
+  <rect x="28" y="28" width="664" height="54" rx="16" fill="#344b3f"/>
+  <text x="52" y="62" fill="#fff" font-family="Arial,sans-serif" font-size="20" font-weight="700">Rasa Bumi</text>
+  <rect x="548" y="42" width="116" height="26" rx="13" fill="#c56b3d"/>
+  <text x="579" y="60" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="700">Katalog</text>
+  <g>
+    <rect x="28" y="104" width="205" height="322" rx="18" fill="#fff"/>
+    <image href="../demos/umkm/kopi-arabika-kertasari.webp" x="40" y="116" width="181" height="174" preserveAspectRatio="xMidYMid slice"/>
+    <text x="44" y="318" fill="#6b7280" font-family="Arial,sans-serif" font-size="11">KOPI · 200 G</text>
+    <text x="44" y="344" fill="#27362f" font-family="Arial,sans-serif" font-size="16" font-weight="700">Kopi Arabika</text>
+    <text x="44" y="373" fill="#344b3f" font-family="Arial,sans-serif" font-size="21" font-weight="700">Rp48.000</text>
+    <rect x="44" y="390" width="165" height="24" rx="12" fill="#e7f4ec"/>
+    <text x="91" y="407" fill="#2f6c4e" font-family="Arial,sans-serif" font-size="11" font-weight="700">Pesan sekarang</text>
+  </g>
+  <g>
+    <rect x="258" y="104" width="205" height="322" rx="18" fill="#fff"/>
+    <image href="../demos/umkm/madu-hutan-kertasari.webp" x="270" y="116" width="181" height="174" preserveAspectRatio="xMidYMid slice"/>
+    <text x="274" y="318" fill="#6b7280" font-family="Arial,sans-serif" font-size="11">PRODUK ALAM · 250 ML</text>
+    <text x="274" y="344" fill="#27362f" font-family="Arial,sans-serif" font-size="16" font-weight="700">Madu Hutan</text>
+    <text x="274" y="373" fill="#344b3f" font-family="Arial,sans-serif" font-size="21" font-weight="700">Rp68.000</text>
+    <rect x="274" y="390" width="165" height="24" rx="12" fill="#fff0da"/>
+    <text x="319" y="407" fill="#9a5a20" font-family="Arial,sans-serif" font-size="11" font-weight="700">Stok terbatas</text>
+  </g>
+  <g>
+    <rect x="488" y="104" width="204" height="322" rx="18" fill="#fff"/>
+    <image href="../demos/umkm/paket-hampers-lereng.webp" x="500" y="116" width="180" height="174" preserveAspectRatio="xMidYMid slice"/>
+    <text x="504" y="318" fill="#6b7280" font-family="Arial,sans-serif" font-size="11">HAMPERS · 1 PAKET</text>
+    <text x="504" y="344" fill="#27362f" font-family="Arial,sans-serif" font-size="16" font-weight="700">Hampers Lereng</text>
+    <text x="504" y="373" fill="#344b3f" font-family="Arial,sans-serif" font-size="21" font-weight="700">Rp145.000</text>
+    <rect x="504" y="390" width="164" height="24" rx="12" fill="#e7f4ec"/>
+    <text x="550" y="407" fill="#2f6c4e" font-family="Arial,sans-serif" font-size="11" font-weight="700">Paket hadiah</text>
+  </g>
+</svg>

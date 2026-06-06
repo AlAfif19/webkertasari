@@ -17,7 +17,7 @@ export const portfolioDemos: PortfolioDemo[] = [
       "Contoh website UMKM untuk memperkenalkan produk, katalog, cerita usaha, dan jalur pemesanan WhatsApp dalam satu halaman.",
     primaryAction: "Lihat katalog",
     secondaryAction: "Cara memesan",
-    image: "/images/portfolio/umkm.svg",
+    image: "/images/portfolio/umkm-catalog.svg",
     disclaimer:
       "Rasa Bumi adalah merek fiktif. Produk, harga, ulasan, dan data pada halaman ini hanya demo.",
     stats: [
@@ -177,7 +177,7 @@ export const portfolioDemos: PortfolioDemo[] = [
       "Contoh website organisasi untuk menjelaskan visi, program, agenda, pengurus, kabar kegiatan, dan cara bergabung.",
     primaryAction: "Lihat program",
     secondaryAction: "Agenda kegiatan",
-    image: "/images/portfolio/organization.svg",
+    image: "/images/portfolio/organization-gallery.svg",
     disclaimer:
       "Kertasari Muda, pengurus, program, agenda, dan seluruh angka pada halaman ini adalah simulasi.",
     stats: [

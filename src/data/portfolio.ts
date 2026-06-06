@@ -6,7 +6,7 @@ export const portfolio: PortfolioItem[] = [
     type: "Promosi usaha lokal",
     description:
       "Website promosi usaha dengan tombol WhatsApp dan katalog layanan.",
-    image: "/images/portfolio/umkm.svg",
+    image: "/images/portfolio/umkm-catalog.svg",
     label: "Demo",
     href: "/demo/website-umkm",
   },
@@ -23,7 +23,7 @@ export const portfolio: PortfolioItem[] = [
     type: "Informasi komunitas",
     description:
       "Website kegiatan, profil pengurus, dan kontak organisasi.",
-    image: "/images/portfolio/organization.svg",
+    image: "/images/portfolio/organization-gallery.svg",
     label: "Demo",
     href: "/demo/website-organisasi",
   },

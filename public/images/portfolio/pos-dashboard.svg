@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480">
+  <rect width="720" height="480" fill="#e8f1fa"/>
+  <rect x="20" y="20" width="680" height="440" rx="22" fill="#f8fafc"/>
+  <rect x="20" y="20" width="72" height="440" rx="22" fill="#123d68"/>
+  <circle cx="56" cy="58" r="18" fill="#3b82f6"/>
+  <rect x="38" y="100" width="36" height="36" rx="10" fill="#3b82f6"/>
+  <rect x="38" y="148" width="36" height="36" rx="10" fill="#ffffff" opacity=".12"/>
+  <rect x="38" y="196" width="36" height="36" rx="10" fill="#ffffff" opacity=".12"/>
+  <rect x="112" y="40" width="344" height="42" rx="14" fill="#fff" stroke="#dbe4ef"/>
+  <text x="138" y="66" fill="#94a3b8" font-family="Arial,sans-serif" font-size="12">Cari produk atau SKU</text>
+  <g fill="#fff" stroke="#dbe4ef">
+    <rect x="112" y="104" width="100" height="134" rx="14"/>
+    <rect x="226" y="104" width="100" height="134" rx="14"/>
+    <rect x="340" y="104" width="100" height="134" rx="14"/>
+    <rect x="112" y="252" width="100" height="134" rx="14"/>
+    <rect x="226" y="252" width="100" height="134" rx="14"/>
+    <rect x="340" y="252" width="100" height="134" rx="14"/>
+  </g>
+  <g fill="#dbeafe">
+    <rect x="122" y="114" width="80" height="66" rx="10"/>
+    <rect x="236" y="114" width="80" height="66" rx="10"/>
+    <rect x="350" y="114" width="80" height="66" rx="10"/>
+    <rect x="122" y="262" width="80" height="66" rx="10"/>
+    <rect x="236" y="262" width="80" height="66" rx="10"/>
+    <rect x="350" y="262" width="80" height="66" rx="10"/>
+  </g>
+  <g fill="#123d68" font-family="Arial,sans-serif" font-size="10" font-weight="700">
+    <text x="122" y="199">Kopi Arabika</text><text x="122" y="220">Rp48.000</text>
+    <text x="236" y="199">Kopi Susu</text><text x="236" y="220">Rp18.000</text>
+    <text x="350" y="199">Teh Rempah</text><text x="350" y="220">Rp32.000</text>
+    <text x="122" y="347">Keripik Balado</text><text x="122" y="368">Rp22.000</text>
+    <text x="236" y="347">Madu Hutan</text><text x="236" y="368">Rp68.000</text>
+    <text x="350" y="347">Hampers</text><text x="350" y="368">Rp145.000</text>
+  </g>
+  <rect x="474" y="20" width="226" height="440" rx="22" fill="#fff"/>
+  <text x="496" y="58" fill="#123d68" font-family="Arial,sans-serif" font-size="17" font-weight="700">Keranjang Saat Ini</text>
+  <g fill="#f1f5f9">
+    <rect x="496" y="82" width="182" height="54" rx="12"/>
+    <rect x="496" y="146" width="182" height="54" rx="12"/>
+    <rect x="496" y="210" width="182" height="54" rx="12"/>
+  </g>
+  <g fill="#334155" font-family="Arial,sans-serif" font-size="11">
+    <text x="510" y="104">Madu Hutan × 1</text><text x="610" y="122">Rp68.000</text>
+    <text x="510" y="168">Kopi Susu × 2</text><text x="610" y="186">Rp36.000</text>
+    <text x="510" y="232">Keripik × 1</text><text x="610" y="250">Rp22.000</text>
+  </g>
+  <line x1="496" y1="290" x2="678" y2="290" stroke="#cbd5e1" stroke-dasharray="5 5"/>
+  <text x="496" y="322" fill="#64748b" font-family="Arial,sans-serif" font-size="12">Total</text>
+  <text x="578" y="322" fill="#123d68" font-family="Arial,sans-serif" font-size="20" font-weight="700">Rp116.000</text>
+  <rect x="496" y="346" width="54" height="32" rx="10" fill="#eff6ff"/>
+  <rect x="558" y="346" width="54" height="32" rx="10" fill="#dbeafe"/>
+  <rect x="620" y="346" width="58" height="32" rx="10" fill="#eff6ff"/>
+  <text x="509" y="366" fill="#2563eb" font-family="Arial,sans-serif" font-size="10">Tunai</text>
+  <text x="572" y="366" fill="#2563eb" font-family="Arial,sans-serif" font-size="10">QRIS</text>
+  <text x="629" y="366" fill="#2563eb" font-family="Arial,sans-serif" font-size="10">Debit</text>
+  <rect x="496" y="396" width="182" height="42" rx="13" fill="#2563eb"/>
+  <text x="542" y="422" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Bayar Rp116.000</text>
+</svg>

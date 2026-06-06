@@ -17,7 +17,7 @@ describe("portfolio demo route", () => {
     ["website-umkm", "Rasa Bumi", "Pilihan Produk"],
     ["website-portofolio", "Nadia Pratama", "Karya Pilihan"],
     ["website-organisasi", "Kertasari Muda", "Agenda Terdekat"],
-    ["website-pos-pelayanan", "Pos Layanan Warga", "Layanan Populer"],
+    ["website-pos-pelayanan", "Rasa Bumi POS", "Operasional Toko Hari Ini"],
     ["dashboard-analitik", "Lentera Analytics", "Aktivitas dan Insight"],
   ])("renders %s as a complete demo", async (slug, brand, sectionTitle) => {
     const page = await PortfolioDemoRoute({
@@ -46,11 +46,11 @@ describe("portfolio demo route", () => {
     expect(
       screen.getByRole("heading", { name: /tren pesanan simulasi/i }),
     ).toBeInTheDocument();
-    expect(screen.getAllByText("Rp18,4 jt")).toHaveLength(2);
+    expect(screen.getAllByText("Rp18,4 jt").length).toBeGreaterThanOrEqual(2);
     expect(screen.getAllByText("Jan").length).toBeGreaterThanOrEqual(2);
     expect(screen.getAllByText("Jun").length).toBeGreaterThanOrEqual(2);
     expect(
-      screen.getByRole("heading", { name: /tren pendapatan/i }),
+      screen.getByRole("heading", { name: /^tren pendapatan$/i }),
     ).toBeInTheDocument();
     expect(
       screen.getByRole("heading", { name: /pesanan per kanal/i }),
@@ -97,5 +97,82 @@ describe("portfolio demo route", () => {
       screen.getByRole("heading", { name: /pertanyaan umum/i }),
     ).toBeInTheDocument();
     expect(screen.getByText("Pilih produk")).toBeInTheDocument();
+  });
+
+  it("renders a six-product UMKM catalog with direct order links", async () => {
+    const page = await PortfolioDemoRoute({
+      params: Promise.resolve({ slug: "website-umkm" }),
+    });
+    render(page);
+
+    expect(
+      screen.getByRole("heading", { name: /katalog rasa bumi/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByText("Kopi Arabika Kertasari")).toBeInTheDocument();
+    expect(screen.getByText("Rp48.000")).toBeInTheDocument();
+
+    const orderLinks = screen.getAllByRole("link", {
+      name: /pesan .* via whatsapp/i,
+    });
+    expect(orderLinks).toHaveLength(6);
+    expect(orderLinks[0]).toHaveAttribute(
+      "href",
+      expect.stringContaining("Kopi%20Arabika%20Kertasari"),
+    );
+  });
+
+  it("renders six fictional organization activity photos", async () => {
+    const page = await PortfolioDemoRoute({
+      params: Promise.resolve({ slug: "website-organisasi" }),
+    });
+    render(page);
+
+    expect(
+      screen.getByRole("heading", { name: /dokumentasi kegiatan/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getAllByRole("img", { name: /kegiatan fiktif/i }),
+    ).toHaveLength(6);
+    expect(screen.getByText("Pelatihan Konten Digital")).toBeInTheDocument();
+  });
+
+  it("renders a complete retail POS interface", async () => {
+    const page = await PortfolioDemoRoute({
+      params: Promise.resolve({ slug: "website-pos-pelayanan" }),
+    });
+    render(page);
+
+    expect(
+      screen.getByRole("heading", { name: /kasir rasa bumi/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByPlaceholderText(/cari produk atau sku/i),
+    ).toBeInTheDocument();
+    expect(screen.getByText("Keranjang Saat Ini")).toBeInTheDocument();
+    expect(screen.getAllByText("Rp116.000").length).toBeGreaterThanOrEqual(2);
+    expect(screen.getAllByText("QRIS").length).toBeGreaterThanOrEqual(1);
+    expect(
+      screen.getByRole("heading", { name: /transaksi terbaru/i }),
+    ).toBeInTheDocument();
+  });
+
+  it("renders a complete operational analytics dashboard", async () => {
+    const page = await PortfolioDemoRoute({
+      params: Promise.resolve({ slug: "dashboard-analitik" }),
+    });
+    render(page);
+
+    expect(
+      screen.getByRole("navigation", { name: /menu dashboard/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: /produk terlaris/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: /stok perlu perhatian/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: /transaksi terakhir/i }),
+    ).toBeInTheDocument();
   });
 });
