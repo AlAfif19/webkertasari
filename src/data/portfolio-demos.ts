@@ -1,4 +1,10 @@
 import type { PortfolioDemo } from "@/types/portfolio-demo";
+import {
+  analyticsData,
+  organizationGallery,
+  posData,
+  umkmProducts,
+} from "@/data/specialized-demo-data";
 
 export const portfolioDemos: PortfolioDemo[] = [
   {
@@ -54,6 +60,7 @@ export const portfolioDemos: PortfolioDemo[] = [
         description: "Camilan renyah dengan pilihan rasa ringan dan pedas.",
       },
     ],
+    products: umkmProducts,
     story: {
       eyebrow: "Cerita Usaha",
       title: "Dari bahan lokal menuju etalase digital.",
@@ -213,6 +220,7 @@ export const portfolioDemos: PortfolioDemo[] = [
         description: "Perkenalan program dan pembagian peran relawan baru.",
       },
     ],
+    gallery: organizationGallery,
     story: {
       eyebrow: "Tentang Komunitas",
       title: "Menyatukan program, kabar, dan partisipasi.",
@@ -239,78 +247,80 @@ export const portfolioDemos: PortfolioDemo[] = [
   {
     slug: "website-pos-pelayanan",
     kind: "service",
-    brand: "Pos Layanan Warga",
-    eyebrow: "Pusat Informasi · Simulasi",
-    title: "Informasi layanan warga yang lebih mudah ditemukan.",
+    brand: "Rasa Bumi POS",
+    eyebrow: "Point of Sale - Data Simulasi",
+    title: "Kasir, stok, dan transaksi dalam satu layar.",
     description:
-      "Contoh website pelayanan untuk menampilkan jenis layanan, persyaratan, jadwal, alur pengajuan, pengumuman, dan kontak petugas.",
-    primaryAction: "Cari layanan",
-    secondaryAction: "Lihat jadwal",
-    image: "/images/portfolio/service.svg",
+      "Contoh aplikasi POS statis untuk memperlihatkan katalog kasir, keranjang, pembayaran, stok, dan riwayat transaksi toko.",
+    primaryAction: "Buka kasir",
+    secondaryAction: "Lihat fitur POS",
+    image: "/images/portfolio/pos-dashboard.svg",
     disclaimer:
-      "Pos Layanan Warga ini bukan instansi resmi. Seluruh layanan, jadwal, persyaratan, dan kontak adalah demo.",
+      "Rasa Bumi POS tidak memproses pembayaran. Produk, stok, kasir, dan transaksi pada halaman ini adalah simulasi.",
     stats: [
-      { value: "8", label: "Layanan demo" },
-      { value: "5 hari", label: "Jadwal layanan" },
-      { value: "3 langkah", label: "Alur sederhana" },
+      { value: "42", label: "Transaksi simulasi hari ini" },
+      { value: "Rp3,8 jt", label: "Penjualan simulasi" },
+      { value: "6", label: "Produk dalam katalog" },
+      { value: "3", label: "Metode pembayaran" },
     ],
     features: [
       {
-        title: "Administrasi warga",
+        title: "Kasir cepat",
         description:
-          "Contoh informasi surat pengantar, perubahan data, dan konsultasi.",
+          "Produk, jumlah barang, diskon, dan total transaksi tersusun dalam satu alur.",
       },
       {
-        title: "Jadwal kegiatan",
+        title: "Pantauan stok",
         description:
-          "Warga dapat melihat waktu layanan dan kegiatan sebelum datang.",
+          "Stok per produk dan peringatan stok menipis terlihat sebelum transaksi.",
       },
       {
-        title: "Kontak petugas",
+        title: "Riwayat transaksi",
         description:
-          "Jalur pertanyaan jelas untuk mengurangi kunjungan yang tidak perlu.",
+          "Tabel transaksi membantu kasir memeriksa metode pembayaran dan status.",
       },
     ],
-    showcaseTitle: "Layanan Populer",
+    showcaseTitle: "Operasional Toko Hari Ini",
     showcase: [
       {
-        title: "Surat Pengantar",
-        meta: "Estimasi 1 hari · Simulasi",
-        description: "Daftar persyaratan dan alur pengajuan yang mudah dipindai.",
+        title: "Kasir pagi",
+        meta: "08.00-15.00 · Simulasi",
+        description: "Ringkasan shift, nama kasir, transaksi, dan kas awal.",
       },
       {
-        title: "Jadwal Posyandu",
-        meta: "Rabu pekan kedua · Simulasi",
-        description: "Informasi waktu, lokasi contoh, dan hal yang perlu dibawa.",
+        title: "Stok menipis",
+        meta: "3 produk · Simulasi",
+        description: "Daftar produk yang perlu diprioritaskan untuk pengadaan.",
       },
       {
-        title: "Pengaduan Lingkungan",
-        meta: "Respons jam kerja · Simulasi",
-        description: "Formulir ringkas untuk meneruskan informasi kepada petugas.",
+        title: "Pembayaran digital",
+        meta: "54% QRIS · Simulasi",
+        description: "Distribusi cara bayar untuk membantu rekonsiliasi kas.",
       },
     ],
+    pos: posData,
     story: {
-      eyebrow: "Tentang Pelayanan",
-      title: "Mengurangi kebingungan sebelum warga datang.",
+      eyebrow: "Tentang Sistem Kasir",
+      title: "Menyatukan transaksi dan stok tanpa tampilan yang rumit.",
       paragraphs: [
-        "Pos Layanan Warga adalah contoh fiktif untuk menunjukkan bagaimana persyaratan, jadwal, dan pengumuman dapat disusun dalam bahasa yang mudah dipahami.",
-        "Informasi yang konsisten membantu warga menyiapkan dokumen serta memilih jalur kontak yang tepat sebelum mengunjungi lokasi layanan.",
+        "Rasa Bumi POS adalah contoh fiktif aplikasi kasir toko yang menampilkan katalog, keranjang, pembayaran, stok, dan transaksi dalam satu layar.",
+        "Tampilan ini bersifat statis untuk menunjukkan struktur antarmuka. Tidak ada pembayaran atau perubahan stok yang benar-benar diproses.",
       ],
-      highlights: ["Persyaratan jelas", "Jadwal terbuka", "Kontak terarah"],
+      highlights: ["Kasir ringkas", "Stok terlihat", "Transaksi tercatat"],
     },
     process: [
-      { step: "01", title: "Pilih layanan", description: "Cari jenis layanan dan baca persyaratan yang dibutuhkan." },
-      { step: "02", title: "Siapkan dokumen", description: "Gunakan daftar periksa sebelum mengajukan layanan." },
-      { step: "03", title: "Datang atau hubungi", description: "Ikuti jadwal dan saluran petugas yang sesuai." },
+      { step: "01", title: "Pilih produk", description: "Kasir mencari produk berdasarkan kategori, nama, atau SKU." },
+      { step: "02", title: "Periksa total", description: "Jumlah barang, diskon, dan total ditinjau di keranjang." },
+      { step: "03", title: "Pilih pembayaran", description: "Metode pembayaran dipilih sebelum transaksi diselesaikan." },
     ],
     faq: [
-      { question: "Apakah ini situs instansi resmi?", answer: "Bukan. Seluruh identitas dan informasi pelayanan adalah demo." },
-      { question: "Bisakah ditambah formulir?", answer: "Bisa, dengan penentuan keamanan dan alur pengelolaan data." },
-      { question: "Apakah jadwal dapat berubah?", answer: "Konten jadwal dapat diperbarui sesuai keputusan pengelola." },
+      { question: "Apakah transaksi benar-benar tersimpan?", answer: "Tidak. Seluruh interaksi dan transaksi pada demo ini bersifat simulasi." },
+      { question: "Bisakah POS terhubung printer?", answer: "Versi produksi dapat dirancang untuk printer struk dan perangkat kasir yang kompatibel." },
+      { question: "Apakah stok dapat otomatis berkurang?", answer: "Bisa pada sistem produksi yang memakai database dan pencatatan transaksi." },
     ],
-    closingTitle: "Pelayanan dimulai dari informasi yang jelas.",
+    closingTitle: "Kasir yang jelas membantu operasional tetap rapi.",
     closingDescription:
-      "Konten dapat diatur sesuai layanan desa, komunitas, posyandu, koperasi, atau organisasi pelayanan lainnya.",
+      "Katalog, pengguna, hak akses, metode pembayaran, stok, dan laporan dapat disesuaikan dengan proses toko.",
   },
   {
     slug: "dashboard-analitik",
@@ -366,6 +376,7 @@ export const portfolioDemos: PortfolioDemo[] = [
         description: "Program tindak lanjut dapat difokuskan pada pelanggan baru.",
       },
     ],
+    analytics: analyticsData,
     story: {
       eyebrow: "Tentang Dashboard",
       title: "Visual yang menjawab pertanyaan, bukan sekadar ramai.",

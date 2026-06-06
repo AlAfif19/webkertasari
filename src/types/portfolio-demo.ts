@@ -39,6 +39,68 @@ export type PortfolioDemoFaq = {
   answer: string;
 };
 
+export type DemoProduct = {
+  name: string;
+  category: string;
+  size: string;
+  price: string;
+  stock: number;
+  image: string;
+  imageAlt: string;
+  badge?: string;
+  description: string;
+};
+
+export type DemoGalleryItem = {
+  title: string;
+  date: string;
+  location: string;
+  caption: string;
+  image: string;
+  imageAlt: string;
+};
+
+export type DemoTransaction = {
+  id: string;
+  time: string;
+  customer: string;
+  method: string;
+  total: string;
+  status: string;
+};
+
+export type DemoPosData = {
+  cashier: string;
+  shift: string;
+  categories: string[];
+  products: Array<DemoProduct & { sku: string }>;
+  cart: Array<{
+    name: string;
+    quantity: number;
+    total: string;
+  }>;
+  subtotal: string;
+  discount: string;
+  tax: string;
+  total: string;
+  paymentMethods: string[];
+  transactions: DemoTransaction[];
+};
+
+export type DemoAnalyticsData = {
+  period: string;
+  topProducts: Array<{
+    name: string;
+    units: number;
+    revenue: string;
+  }>;
+  lowStock: Array<{
+    name: string;
+    stock: number;
+  }>;
+  transactions: DemoTransaction[];
+};
+
 export type PortfolioDemo = {
   slug: string;
   kind: PortfolioDemoKind;
@@ -58,6 +120,10 @@ export type PortfolioDemo = {
   features: PortfolioDemoFeature[];
   showcaseTitle: string;
   showcase: PortfolioDemoShowcase[];
+  products?: DemoProduct[];
+  gallery?: DemoGalleryItem[];
+  pos?: DemoPosData;
+  analytics?: DemoAnalyticsData;
   story: PortfolioDemoStory;
   process: PortfolioDemoProcess[];
   faq: PortfolioDemoFaq[];

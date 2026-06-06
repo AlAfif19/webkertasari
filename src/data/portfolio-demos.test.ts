@@ -45,4 +45,44 @@ describe("portfolio demo data", () => {
       "/images/portfolio/analytics-dashboard.svg",
     );
   });
+
+  it("provides a realistic six-product UMKM catalog", () => {
+    const umkm = getPortfolioDemoBySlug("website-umkm");
+
+    expect(umkm?.products).toHaveLength(6);
+    expect(umkm?.products?.map((product) => product.price)).toContain(
+      "Rp48.000",
+    );
+    expect(umkm?.products?.every((product) => product.stock > 0)).toBe(true);
+  });
+
+  it("provides six accessible fictional organization photos", () => {
+    const organization = getPortfolioDemoBySlug("website-organisasi");
+
+    expect(organization?.gallery).toHaveLength(6);
+    expect(
+      organization?.gallery?.every((item) => item.imageAlt.length > 20),
+    ).toBe(true);
+  });
+
+  it("provides a complete retail POS simulation", () => {
+    const pos = getPortfolioDemoBySlug("website-pos-pelayanan");
+
+    expect(pos?.pos?.products.length).toBeGreaterThanOrEqual(6);
+    expect(pos?.pos?.cart).toHaveLength(3);
+    expect(pos?.pos?.paymentMethods).toEqual([
+      "Tunai",
+      "QRIS",
+      "Kartu debit",
+    ]);
+    expect(pos?.pos?.transactions).toHaveLength(4);
+  });
+
+  it("provides operational analytics details", () => {
+    const analytics = getPortfolioDemoBySlug("dashboard-analitik");
+
+    expect(analytics?.analytics?.topProducts).toHaveLength(4);
+    expect(analytics?.analytics?.lowStock).toHaveLength(3);
+    expect(analytics?.analytics?.transactions).toHaveLength(4);
+  });
 });

@@ -28,11 +28,11 @@ export const portfolio: PortfolioItem[] = [
     href: "/demo/website-organisasi",
   },
   {
-    title: "Website POS Pelayanan",
-    type: "Layanan warga",
+    title: "Website POS Kasir",
+    type: "Kasir dan inventori",
     description:
-      "Website informasi layanan, jadwal kegiatan, dan kontak petugas.",
-    image: "/images/portfolio/service.svg",
+      "Demo kasir toko dengan katalog, keranjang, pembayaran, stok, dan transaksi.",
+    image: "/images/portfolio/pos-dashboard.svg",
     label: "Demo",
     href: "/demo/website-pos-pelayanan",
   },
